@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profilePic from "../public/assets/profpic.png";
-import { skills, education, experience } from "./helper/DigitalResumeData";
+import { skills, education, experience } from "./lib/DigitalResumeData";
 
 import { ArrowRight } from "react-feather";
 
