@@ -2,25 +2,35 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav>
-      <div>
-        <h4>Andy</h4>
+    <nav className="w-full flex flex-row px-60 py-8">
+      <div className="w-full">
+        <Link href="/">
+          <a className="uppercase font-bold hover:underline transition-all ease-in">
+            Andy
+          </a>
+        </Link>
       </div>
       <div>
-        <ul>
+        <ul className="flex flex-row gap-8">
           <Link href="/">
             <a>
-              <li>Work</li>
+              <li className="hover:underline transition-all ease-in hover:font-bold">
+                Work
+              </li>
             </a>
           </Link>
           <Link href="/">
             <a>
-              <li>About</li>
+              <li className="hover:underline transition-all ease-in hover:font-bold">
+                About
+              </li>
             </a>
           </Link>
           <Link href="/">
             <a>
-              <li>Contact</li>
+              <li className="hover:underline transition-all ease-in hover:font-bold">
+                Contact
+              </li>
             </a>
           </Link>
         </ul>
