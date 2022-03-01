@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <div>
-      <section className="flex flex-col pb-24 md:pb-48 lg:pb-64 gap-4 md:gap-24 lg:gap-48">
+      <section className="flex flex-col pb-24 md:pb-48 lg:pb-64 gap-4 md:gap-24 lg:gap-48 md:pt-12 lg:pt-24">
         <h1 className="text-3xl md:text-5xl lg:text-8xl pb-12 md:pb-24 lg:pb-48">
           About Me
         </h1>
