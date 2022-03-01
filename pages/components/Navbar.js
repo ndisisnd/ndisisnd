@@ -19,7 +19,7 @@ export default function Navbar() {
               </li>
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/about">
             <a>
               <li className="hover:underline transition-all ease-in hover:font-bold">
                 About
@@ -27,7 +27,7 @@ export default function Navbar() {
             </a>
           </Link>
           <Link href="/">
-            <a>
+            <a href="mailto:ndisisnd@gmail.com">
               <li className="hover:underline transition-all ease-in hover:font-bold">
                 Contact
               </li>
