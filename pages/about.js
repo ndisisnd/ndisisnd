@@ -1,10 +1,17 @@
 import Image from "next/image";
 import profilePic from "../public/assets/profpic.png";
-import { skills, education, experience } from "./lib/DigitalResumeData";
+import experience from "./lib/experience.json";
+import education from "./lib/education.json";
+import skills from "./lib/skills.json";
+// import { skills, education, experience } from "./lib/DigitalResumeData";
 
 import { ArrowRight } from "react-feather";
 
 export default function About() {
+  const expArr = experience;
+  const eduArr = education;
+  const skillArr = skills;
+
   return (
     <div className="px-60">
       <div className="text-7xl">About Me</div>
@@ -32,7 +39,7 @@ export default function About() {
             <h3 className="tracking-wide uppercase font-bold text-2xl">
               Experience
             </h3>
-            {experience.map((exp) => (
+            {expArr.map((exp) => (
               <div key={exp.org} className="flex flex-col gap-1">
                 <h4 className="tracking-wide uppercase text-xl">{exp.org}</h4>
                 <div>
@@ -46,7 +53,7 @@ export default function About() {
             <h3 className="tracking-wide uppercase font-bold text-2xl">
               Education
             </h3>
-            {education.map((edu) => (
+            {eduArr.map((edu) => (
               <div key={edu.org} className="flex flex-col gap-1">
                 <h4 className="tracking-wide uppercase text-xl">{edu.org}</h4>
                 <div>
@@ -75,7 +82,7 @@ export default function About() {
         </div>
         <div>
           <Image
-            src={profilePic}
+            src="/assets/profpic.png"
             width={550}
             height={734}
             alt="Andy's profile picture."
