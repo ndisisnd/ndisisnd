@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { ArrowRight } from "react-feather";
+import ImageCont from "./components/Image";
 
 export default function connect() {
   return (
@@ -116,7 +118,20 @@ export default function connect() {
               Polymerize Connect is in an alpha version, which is launched on
               Feb 28, 2022.
             </p>
-            {/* Image Here */}
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1600}
+                height={900}
+                layout="responsive"
+                src="/assets/connect-problem-space.png"
+                alt="                Digital representation of sketch of related problems, and its
+                own problem space."
+              />
+              <p className="text-sm italic pt-4 md:pt-8">
+                Digital representation of sketch of related problems, and its
+                own problem space.
+              </p>
+            </div>
             <h4 className="font-bold">
               Every lab worked so differently from one another, but the
               fundamentals are always the same.
@@ -129,7 +144,14 @@ export default function connect() {
             </p>
             <section className="flex flex-col gap-4 lg:flex-row lg:py-4">
               <div className="flex flex-col gap-4">
-                {/* Image Here */}
+                <div className="">
+                  <Image
+                    width={600}
+                    height={600}
+                    src="/assets/connect-b-a.png"
+                    alt="Stages of companies differ from one another."
+                  />
+                </div>
                 <h4 className="font-bold">
                   Not everyone did “B” after “A”—some did “C” or even “A.1”
                 </h4>
@@ -141,7 +163,14 @@ export default function connect() {
                 </p>
               </div>
               <div className="flex flex-col gap-4">
-                {/* Image Here */}
+                <div className="">
+                  <Image
+                    width={600}
+                    height={600}
+                    src="/assets/connect-do-math.png"
+                    alt="User flow of exiting."
+                  />
+                </div>
                 <h4 className="font-bold">
                   Frequent exiting of the platform to perform calculations
                 </h4>
@@ -202,7 +231,15 @@ export default function connect() {
             mental models that the design team was already working with.
           </p>
           <p>Below is an excerpt of key flows that I’ve mapped.</p>
-          {/* Image here */}
+          <div className="py-4 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={960}
+              height={240}
+              layout="responsive"
+              src="/assets/connect-key-flows-excerpt.png"
+              alt="Table of some key flows."
+            />
+          </div>
           <p>
             When researchers document less and less detail, Labs’ machine
             learning model has less accurate data to train on. Predictions
@@ -355,10 +392,18 @@ export default function connect() {
             workflow into Connect. They are the craftsmen of their own
             protocols.
           </p>
-          {/* Image */}
-          <p className="text-sm italic">
-            Design in collaboration with Audrey Yeo.
-          </p>
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1600}
+              height={900}
+              layout="responsive"
+              src="/assets/main-connect.png"
+              alt="Images of dashboard for Polymerize Connect"
+            />
+            <p className="text-sm italic pt-4 md:pt-8">
+              Design in collaboration with Audrey Yeo.
+            </p>
+          </div>
           <div className="flex flex-col py-12">
             <hr className="py-4" />
             <h3 className="text-xl font-bold">

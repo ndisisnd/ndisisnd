@@ -10,3 +10,5 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+// <div className=" md:pl-12 lg:pl-20 flex flex-col gap-4 md:gap-12 lg:gap-16 xl:gap-24 "></div>
