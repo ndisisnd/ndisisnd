@@ -15,8 +15,8 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <p className="text-gray-400 text-md">Find me</p>
           <section className="flex flex-col">
-            <a href="www.medium.com/@ndisisnd">Medium</a>
-            <a href="www.linkedin.com/in/ndisisnd">LinkedIn</a>
+            <a href="https://www.medium.com/@ndisisnd">Medium</a>
+            <a href="https://www.linkedin.com/in/ndisisnd">LinkedIn</a>
             <a
               href="mailto:ndisisnd@gmail.com"
               target="_blank"
