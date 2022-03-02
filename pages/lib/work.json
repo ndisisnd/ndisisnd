@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Polymerize Connect",
+    "desc": "For researchers to connect the dots with their research, in any way they want to",
+    "src": "/assets/main-connect.png",
+    "link": "/connect"
+  },
+  {
+    "title": "Polymerize Labs",
+    "desc": "Designing an interface for scientists to statistically predict experiment data",
+    "src": "/assets/main-labs.png",
+    "link": "/labs"
+  },
+  {
+    "title": "OhMai",
+    "desc": "Reshaping game purchasing behaviour",
+    "src": "/assets/epicsoft.png",
+    "link": "/coming-soon"
+  }
+]
