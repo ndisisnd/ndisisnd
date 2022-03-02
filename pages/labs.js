@@ -1,7 +1,7 @@
 export default function labs() {
   return (
     <div className="flex flex-col gap-8 ">
-      <div className="flex flex-col gap-4 pb-12 md:pb-24">
+      <div className="flex flex-col gap-4 md:pb-24">
         {/* Hero */}
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl tracking-tight font-bold">Polymerize Labs</h1>
@@ -30,7 +30,7 @@ export default function labs() {
       </div>
 
       {/* Body */}
-      <div className=" md:pl-12 lg:pl-20 flex flex-col gap-4 md:gap-12 lg:gap-16 xl:gap-24 ">
+      <div className=" md:pl-12 lg:pl-20 flex flex-col gap-16 pb-24 lg:gap-20 xl:gap-28 ">
         {/* Starter */}
         <article className="pb-16">
           <p>
@@ -40,7 +40,7 @@ export default function labs() {
         </article>
 
         {/* The Challenge & My Role */}
-        <article className="flex flex-col gap-4 font-regular">
+        <article className="flex flex-col gap-4 md:gap-12 font-regular">
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-xl">The Challenge</h3>
             <p>
@@ -80,7 +80,7 @@ export default function labs() {
         </article>
 
         {/* Problem Space & Discovery */}
-        <article className="flex flex-col gap-4 font-regular">
+        <article className="flex flex-col gap-4 md:gap-12 font-regular">
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-xl">Problem Space & Discovery</h3>
             <p>
@@ -114,7 +114,7 @@ export default function labs() {
               university research projects. These research papers gave us
               direct, unbiased perspectives.
             </p>
-            <section>
+            <section className="flex flex-col gap-2 py-4">
               <h3 className="text-2xl">When do users use DoE?</h3>
               <ol>
                 <li>
@@ -139,7 +139,7 @@ export default function labs() {
                 to define the next part of their mental model:
               </p>
             </section>
-            <section>
+            <section className="flex flex-col gap-2 py-4">
               <h3 className="text-2xl">How will I want to use DoE?</h3>
               <ol>
                 <li>
@@ -240,7 +240,7 @@ export default function labs() {
         </article>
 
         {/* The Impact & Reflection */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">The Impact</h3>
           <h2 className="text-3xl font-light">
             Generating experiments with a few clicks
@@ -250,7 +250,7 @@ export default function labs() {
             frictionless. It was also used as a finisher to clinch a large MNC
             customer.
           </p>
-          <article className="flex flex-col gap-1">
+          <article className="flex flex-col gap-4 py-4">
             <h3 className="font-bold text-xl">Reflection</h3>
             <p>
               Overall, the DoE feature really targeted the use cases of our

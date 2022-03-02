@@ -5,7 +5,11 @@ export default function Footer() {
   return (
     <footer className="flex flex-col gap-8 py-16">
       <div>
-        <h3 className="text-3xl lg:text-5xl uppercase font-bold">Andy</h3>
+        <Link href="/">
+          <a href="">
+            <h3 className="text-3xl lg:text-5xl uppercase font-bold">Andy</h3>
+          </a>
+        </Link>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between gap-4">
         <div className="flex flex-col gap-2">
@@ -22,9 +26,9 @@ export default function Footer() {
             </a>
           </section>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 md:text-right">
           <section className="flex flex-col gap-4">
-            <div className="flex flex-col">
+            <div className="flex flex-col md:items-end">
               <span className="flex flex-row gap-2">
                 <a
                   href="mailto:ndisisnd@gmail.com"
@@ -48,7 +52,18 @@ export default function Footer() {
                 <ArrowRight />
               </span>
             </div>
-            <p className="text-gray-400 text-sm">© Andy Chan 2022</p>
+            <div>
+              <p className="text-gray-400 font-light text-sm">
+                © Andy Chan 2022
+              </p>
+              <p className="text-sm font-light">
+                Built in{" "}
+                <a className="underline" href="https://nextjs.org/">
+                  NextJS
+                </a>{" "}
+                ❤️
+              </p>
+            </div>
           </section>
         </div>
       </div>
