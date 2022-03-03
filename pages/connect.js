@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { ArrowRight } from "react-feather";
-import ImageCont from "./components/Image";
 
 export default function connect() {
   return (
-    <div className="flex flex-col gap-8 ">
+    <div className="flex flex-col gap-8 text-lg">
       {/* Hero */}
       <div className="flex flex-col gap-4 pb-12 md:pb-24">
         <div className="flex flex-col gap-4">
@@ -124,7 +123,7 @@ export default function connect() {
                 height={900}
                 layout="responsive"
                 src="/assets/connect-problem-space.png"
-                alt="                Digital representation of sketch of related problems, and its
+                alt="Digital representation of sketch of related problems, and its
                 own problem space."
               />
               <p className="text-sm italic pt-4 md:pt-8">
@@ -398,7 +397,7 @@ export default function connect() {
               height={900}
               layout="responsive"
               src="/assets/main-connect.png"
-              alt="Images of dashboard for Polymerize Connect"
+              alt="Different designs for Polymerize Connect, for different features."
             />
             <p className="text-sm italic pt-4 md:pt-8">
               Design in collaboration with Audrey Yeo.
@@ -416,8 +415,18 @@ export default function connect() {
               contacting sales to upload data, and spending hours in front of
               the your screen. Simply upload and go.
             </p>
-            {/* Image */}
-            <p className="text-sm italic">Concept design by me.</p>
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1600}
+                height={900}
+                layout="responsive"
+                src="/assets/connect-data-upload-mapper-ui.png"
+                alt="Data upload mapper"
+              />
+              <p className="text-sm italic pt-4 md:pt-8">
+                Design in collaboration with Audrey Yeo.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col py-12">
             <hr className="py-4" />
@@ -429,10 +438,18 @@ export default function connect() {
               single place. Managing work is now easier: get all the information
               and context you need without ever navigating out!
             </p>
-            {/* Image */}
-            <p className="text-sm italic">
-              Design in collaboration with Audrey Yeo.
-            </p>
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1600}
+                height={900}
+                layout="responsive"
+                src="/assets/connect-pmb-ui.png"
+                alt="Images of dashboard for Polymerize Connect"
+              />
+              <p className="text-sm italic pt-4 md:pt-8">
+                Design in collaboration with Audrey Yeo.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col py-12">
             <hr className="py-4" />
@@ -444,10 +461,18 @@ export default function connect() {
               We’ll make sense of it. Over time, we’ll learn more about what you
               search.
             </p>
-            {/* Image */}
-            <p className="text-sm italic">
-              Design in collaboration with Audrey Yeo.
-            </p>
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1600}
+                height={900}
+                layout="responsive"
+                src="/assets/connect-search-ui.png"
+                alt="Images of global search functionality for Polymerize Connect"
+              />
+              <p className="text-sm italic pt-4 md:pt-8">
+                Design in collaboration with Audrey Yeo.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col py-12">
             <hr className="py-4" />
@@ -459,15 +484,23 @@ export default function connect() {
               permissions? We introduced a never-seen-before level of
               flexibility in every corner of the platform.
             </p>
-            {/* Image */}
-            <p className="text-sm italic">
-              Design in collaboration with Audrey Yeo.
-            </p>
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1600}
+                height={900}
+                layout="responsive"
+                src="/assets/connect-wo-customise-ui.png"
+                alt="Images of customisation of work orders through flowchart for Polymerize Connect"
+              />
+              <p className="text-sm italic pt-4 md:pt-8">
+                Design in collaboration with Audrey Yeo.
+              </p>
+            </div>
           </div>
         </article>
 
         {/* How we got there */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">How we got there</h3>
           <h2 className="text-3xl font-light">
             Perfecting the project management experience
@@ -497,15 +530,23 @@ export default function connect() {
             in creating design solutions that scale.
           </p>
           <div className="py-4">
-            {/* Image */}
-            <p className="text-sm italic">
-              An except from the list of contexts I considered.
-            </p>
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1600}
+                height={900}
+                layout="responsive"
+                src="/assets/connect-spectrums.png"
+                alt="Images of spectrums to consider"
+              />
+              <p className="text-sm italic py-2">
+                An except from the list of contexts I considered.
+              </p>
+            </div>
           </div>
         </article>
 
         {/* Translating */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">
             Translating into feature prioritisation
           </h3>
@@ -531,11 +572,19 @@ export default function connect() {
               operations, projects, and experiments?
             </li>
           </ol>
-          {/* Image */}
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={632}
+              height={215}
+              layout="responsive"
+              src="/assets/connect-from-to.png"
+              alt="Images of bad states to good states"
+            />
+          </div>
         </article>
 
         {/* From Uncertain to Predictable */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">From Uncertain to Predictable</h3>
           <h2 className="text-3xl font-light">
             Ingesting data in any shape and form
@@ -596,9 +645,9 @@ export default function connect() {
           </p>
           <p> We defined the mental model of our user: </p>
           <ul>
-            <li>I want to know what I am uploading</li>
-            <li>I want to know what will eventually get ingested</li>
-            <li>I want to control what I want to upload</li>
+            <li>- I want to know what I am uploading</li>
+            <li>- I want to know what will eventually get ingested</li>
+            <li>- I want to control what I want to upload</li>
           </ul>
           <p>
             So as long as the user is able to achieve the above whilst giving
@@ -612,9 +661,15 @@ export default function connect() {
             data from their spreadsheet so that they know what data their column
             contains as a hint.
           </p>
-          <div>
-            {/* Image */}
-            <p className="text-sm italic">
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1440}
+              height={1024}
+              layout="responsive"
+              src="/assets/connect-data-upload-select.png"
+              alt="Data upload mapper UI"
+            />
+            <p className="text-sm italic py-4">
               Early explorations of the data upload mapper, focused on making
               the mapping function central. Designed in collaboration with
               Audrey Yeo, Michelle Vania Tandjung.
@@ -633,16 +688,20 @@ export default function connect() {
             like email messaging platforms, and de-risked our new flow by
             testing with existing users.
           </p>
-          <div>
-            {/* Image */}
-            <p className="italic text-sm">
-              Design in collaboration with Audrey Yeo.
-            </p>
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1440}
+              height={1024}
+              layout="responsive"
+              src="/assets/connect-data-history-select.png"
+              alt="Data history UI"
+            />
+            <p className="text-sm italic py-4">Concept design by me.</p>
           </div>
         </article>
 
         {/* From Inefficent to Optimised */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">From Inefficient to Optimised</h3>
           <h2 className="text-3xl font-light">Search anything, anywhere</h2>
           <p>
@@ -662,8 +721,8 @@ export default function connect() {
             This was by far the most rewarding and technically demanding part of
             this project.
           </p>
-          <section>
-            <h3 className="text-xl font-bold">Breadrth & Depth</h3>
+          <section className="flex flex-col gap-4">
+            <h3 className="text-xl font-bold">Breadth & Depth</h3>
             <p>
               Search can span across the entire platform, but it can also dive
               very deep into a component. Users can go from searching for a
@@ -677,11 +736,16 @@ export default function connect() {
               are searchable in the first place—as long as it is recorded, it
               should be searchable.
             </p>
-            <div>
-              {/* Image */}
-              <p>
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Excerpt of properties taht are part of "breadth" or "depth".
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={960}
+                height={342}
+                layout="responsive"
+                src="/assets/connect-search.png"
+                alt="Breadth and depth considerations"
+              />
+              <p className="text-sm italic py-4">
+                Excerpt of properties that are part of “breadth” or “depth”.
               </p>
             </div>
             <p>
@@ -694,12 +758,18 @@ export default function connect() {
               flows, and tested my assumptions by looking at heatmaps and asking
               the materials team.
             </p>
-            <section>
-              {/* Image */}
-              <p className="text-sm italic">
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={960}
+                height={342}
+                layout="responsive"
+                src="/assets/connect-search-key-flows.png"
+                alt="Example of some key flows that we tested."
+              />
+              <p className="text-sm italic py-4">
                 Example of some key flows that we tested.
               </p>
-            </section>
+            </div>
             <p>We then defined the mental model of the user:</p>
             <ol>
               <li>1. I want to search for something quickly</li>
@@ -712,33 +782,34 @@ export default function connect() {
                 search for it
               </li>
             </ol>
-            <section>
-              <h3 className="font-bold text-xl">Searching Globally Anywhere</h3>
-              <p>
-                Making search efficient was beyond just creating a “search bar”.
-                We needed to ensure that researchers can get to search things
-                globally at any location.
-              </p>
-              <div>
-                {/* Image */}
-                <p className="text-sm italic">
-                  Localised search also presented options for global searching.
-                </p>
-              </div>
-            </section>
-            <section>
+            <section className="flex flex-col gap-4">
               <h3 className="font-bold text-xl">Searching Filtering</h3>
               <p>
                 To ensure that users can look for really specific things, I
                 designed a search filtering function that uses a verbose, search
                 combination builder design.
               </p>
-              <div>
-                {/* Image */}
-                <p className="text-sm italic">Concept design by me.</p>
+              <p>
+                This search filter combination builder is also present in
+                formulations, a feature that stores all formulations that they
+                have created so far and its relevant metadata.
+              </p>
+              <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+                <Image
+                  width={1440}
+                  height={1029}
+                  layout="responsive"
+                  src="/assets/connect-search-concept-4.png"
+                  alt="Concept of displaying results."
+                />
+                <p className="text-sm italic py-4">
+                  Concept design by me. Notice how users can also search for
+                  information within a component itself, so it goes beyond
+                  simple keyword matching.
+                </p>
               </div>
             </section>
-            <section>
+            <section className="flex flex-col gap-4">
               <h3 className="font-bold text-xl">
                 Know what you’re searching for, know what could be searched for
               </h3>
@@ -756,17 +827,32 @@ export default function connect() {
                   searched for
                 </li>
                 <li>4. Predicted search results </li>
+                <li>
+                  5. Allowing users to search for strings, numbers, and other
+                  data within components themselves (e.g. which project is owned
+                  by &quot;ABC&quot;?)
+                </li>
               </ol>
-              <div>
-                {/* Image */}
-                <p className="text-sm italic">Concept design by me.</p>
+              <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+                <Image
+                  width={1600}
+                  height={900}
+                  layout="responsive"
+                  src="/assets/connect-search-concept-3.png"
+                  alt="Concept of displaying results."
+                />
+                <p className="text-sm italic py-4">
+                  Concept design by me. Notice how users can also search for
+                  information within a component itself, so it goes beyond
+                  simple keyword matching.
+                </p>
               </div>
             </section>
           </section>
         </article>
 
         {/* From Disconnected to Interconnected */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">
             From Disconnected to Interconnected
           </h3>
@@ -802,7 +888,7 @@ export default function connect() {
               2. I want to see as much information as I need at any given time
             </li>
           </ol>
-          <section>
+          <section className="flex flex-col gap-4">
             <h3 className="text-xl font-bold">ConnectBoard</h3>
             <p>
               ConnectBoard is a project management board that mirrors how
@@ -824,24 +910,49 @@ export default function connect() {
               had a clear vision to go for, ConnectBoard quickly came to life
               after two weeks of debating and sprint work.
             </p>
-            <div>
-              {/* Image */}
-              <p className="text-sm italic">
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1440}
+                height={1024}
+                layout="responsive"
+                src="/assets/connect-projects-select-ui-3.png"
+                alt="Designing the project management board."
+              />
+              <p className="text-sm italic py-4">
                 Designing the project management board.
               </p>
             </div>
-            <div>
-              {/* Image */}
-              <p className="text-sm italic">
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1440}
+                height={1024}
+                layout="responsive"
+                src="/assets/connect-projects-select-ui-1.png"
+                alt="Centralising files, reports, and experiment information in a single place."
+              />
+              <p className="text-sm italic py-4">
                 Centralising files, reports, and experiment information in a
                 single place.
+              </p>
+            </div>
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1440}
+                height={1024}
+                layout="responsive"
+                src="/assets/connect-projects-select-ui-2.png"
+                alt="Gantt chart of project."
+              />
+              <p className="text-sm italic py-4">
+                Gantt chart/Project timeline. This was one of the most difficult
+                parts to nail down in this design.
               </p>
             </div>
           </section>
         </article>
 
         {/* From Immutable to Flexible */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">From Immutable to Flexible</h3>
           <h2 className="text-3xl font-light">
             Mapping workflows in multiple modular ways
@@ -871,9 +982,15 @@ export default function connect() {
             <li>3. Team members working on an experiment/project</li>
             <li>4. Details of an experiment/project</li>
           </ol>
-          <div>
-            {/* Image */}
-            <p className="text-sm italic">
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1440}
+              height={1024}
+              layout="responsive"
+              src="/assets/connect-project-template.png"
+              alt="Templating and custom fields."
+            />
+            <p className="text-sm italic py-4">
               Creating a project can now encompass different datatypes.
             </p>
           </div>
@@ -884,9 +1001,15 @@ export default function connect() {
             process the same ingredient in two different ways to compare the
             resultant properties.
           </p>
-          <div>
-            {/* Image */}
-            <p className="text-sm italic">
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1440}
+              height={1024}
+              layout="responsive"
+              src="/assets/connect-WO-customise.png"
+              alt="Flowchart to customise work order stages"
+            />
+            <p className="text-sm italic py-4">
               Customising stages of experiments to accommodate for unique
               projects.
             </p>
@@ -894,7 +1017,7 @@ export default function connect() {
         </article>
 
         {/* The Impact */}
-        <article className="flex flex-col gap-1">
+        <article className="flex flex-col gap-4">
           <h3 className="font-bold text-xl">The Impact</h3>
           <h2 className="text-3xl font-light">
             A minimum desirable product in 6 weeks{" "}
@@ -907,7 +1030,8 @@ export default function connect() {
             worse when the design team had to design in parallel with
             engineering.
           </p>
-          <article className="flex flex-col gap-1">
+          {/* Reflection */}
+          <article className="flex flex-col gap-4">
             <h3 className="font-bold text-xl">Reflection</h3>
             <p>
               If given more time, Polymerize Connect could’ve been launched in
@@ -942,9 +1066,8 @@ export default function connect() {
             </p>
           </article>
         </article>
-
-        {/* Reflection */}
       </div>
+
       <div className="flex flex-row gap-2 items-center mx-auto my-24">
         <a href="mailto:ndisisnd@gmail.com" target="_blank" rel="noreferrer">
           <h1 className="text-3xl md:text-5xl tracking-wide hover:underline hover:font-bold ease-in hover:ease-in">
