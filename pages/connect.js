@@ -1,10 +1,14 @@
 import Image from "next/image";
 import { ArrowRight } from "react-feather";
+import Head from "next/head";
 
 export default function connect() {
   return (
     <div className="flex flex-col gap-8 text-lg">
       {/* Hero */}
+      <Head>
+        <title>Polymerize Connect</title>
+      </Head>
       <div className="flex flex-col gap-4 pb-12 md:pb-24">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl tracking-tight font-bold">

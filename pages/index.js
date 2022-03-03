@@ -2,10 +2,14 @@ import Link from "next/link";
 import { ArrowRight } from "react-feather";
 import Image from "next/image";
 import work from "./lib/work.json";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="pb-24 md:pb-48">
+      <Head>
+        <title>Andy Chan</title>
+      </Head>
       <h1 className="text-3xl font-light md:text-5xl lg:text-8xl md:pt-12 lg:pt-24 pb-20 md:pb-48">
         👋🏻 Hi there, I&apos;m Andy. Currently building product at{" "}
         <a

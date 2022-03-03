@@ -1,9 +1,13 @@
 import Image from "next/image";
 import { ArrowRight } from "react-feather";
+import Head from "next/head";
 
 export default function labs() {
   return (
     <div className="flex flex-col gap-8 ">
+      <Head>
+        <title>Polymerize Labs</title>
+      </Head>
       <div className="flex flex-col gap-4 md:pb-24">
         {/* Hero */}
         <div className="flex flex-col gap-4">
