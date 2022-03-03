@@ -20,28 +20,28 @@ export default function Home() {
       </h1>
       <div className="flex flex-col gap-16 text-xl font-bold md:text-4xl transition-all ease-in">
         {work.map((el) => (
-          <section key={el.title} className="flex flex-col gap-16">
-            <Image
-              src={el.src}
-              width={1600}
-              height={900}
-              alt=""
-              className="object-scale-down"
-            ></Image>
-            <article className="flex flex-col gap-2">
-              <span className="flex flex-row gap-2 items-center">
-                {" "}
-                <Link href={el.link}>
+          <Link key={el.title} href={el.link}>
+            <section className="flex flex-col gap-16 hover:shadow-md hover:cursor-pointer transition-all hover:p-8 ease-in hover:ease-in">
+              <Image
+                src={el.src}
+                width={1600}
+                height={900}
+                alt=""
+                className="object-scale-down"
+              ></Image>
+              <article className="flex flex-col gap-2">
+                <span className="flex flex-row gap-2 items-center">
+                  {" "}
                   <a className="hover:underline">
                     <h2>{el.title}</h2>
                   </a>
-                </Link>
-                <ArrowRight size={24} className="md:hidden" />
-                <ArrowRight size={48} className="hidden md:block" />
-              </span>
-              <h2 className="text-gray-500 font-light">{el.desc}</h2>
-            </article>
-          </section>
+                  <ArrowRight size={24} className="md:hidden" />
+                  <ArrowRight size={48} className="hidden md:block" />
+                </span>
+                <h2 className="text-gray-500 font-light">{el.desc}</h2>
+              </article>
+            </section>
+          </Link>
         ))}
       </div>
     </div>

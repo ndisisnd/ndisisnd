@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { ArrowRight } from "react-feather";
+
 export default function labs() {
   return (
     <div className="flex flex-col gap-8 ">
@@ -155,9 +158,15 @@ export default function labs() {
                   </li>
                 </li>
               </ol>
-              <div>
-                {/* Image */}
-                <p className="text-sm italic">
+              <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+                <Image
+                  width={832}
+                  height={152}
+                  layout="responsive"
+                  src="/assets/labs/labs-1.png"
+                  alt="Flowchart of key flows for algorithmic generation of experiments."
+                />
+                <p className="text-sm italic py-4">
                   Key flow of algorithmic gerneration of experiments.
                 </p>
               </div>
@@ -186,10 +195,17 @@ export default function labs() {
               need is the end result. Hence, we sought to design our interface
               around that concept.
             </p>
-            <div>
-              {/* Image */}
-              <p className="text-sm italic">
-                Conceptualised user flow for Design of Experiments.
+            <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+              <Image
+                width={1311}
+                height={2662}
+                layout="responsive"
+                src="/assets/labs/labs-2.png"
+                alt="General user flow for DoE"
+              />
+              <p className="text-sm italic py-4">
+                General user flow for DoE (actual user flow is more complex, and
+                obfuscated due to non-disclosure agreements.)
               </p>
             </div>
           </div>
@@ -209,10 +225,31 @@ export default function labs() {
               straight into entering values and generating experiments.
             </p>
           </div>
-          <div>
-            {/* Image */}
-            <p className="text-sm italic">
-              Design in collaboration with Audrey Yeo.
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1440}
+              height={1020}
+              layout="responsive"
+              src="/assets/labs/labs-3.png"
+              alt="DoE Generating"
+            />
+            <p className="text-sm italic py-4">
+              Design in collaboration with Audrey Yeo. These are mandatory
+              fields to enter so as to provide data for the algorithm to
+              generate data from.
+            </p>
+          </div>
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1440}
+              height={1020}
+              layout="responsive"
+              src="/assets/labs/labs-4.png"
+              alt="DoE Generating"
+            />
+            <p className="text-sm italic py-4">
+              Concept design by me. This is how the generated experiment will
+              look like.
             </p>
           </div>
           <p>
@@ -226,9 +263,17 @@ export default function labs() {
             about any other algorithms that they may require, and decided to use
             those as a base.
           </p>
-          <div>
-            {/* Image */}
-            <p className="text-sm italic">Concept design by me.</p>
+          <div className="py-8 md:py-16 lg:py-24 text-center md:text-left md:-ml-12 lg:-ml-20">
+            <Image
+              width={1440}
+              height={1020}
+              layout="responsive"
+              src="/assets/labs/labs-5.png"
+              alt="DoE history"
+            />
+            <p className="text-sm italic py-4">
+              Storage of all previously generated DoE.
+            </p>
           </div>
           <p>
             I also then designed a page to store previously generated
@@ -269,6 +314,15 @@ export default function labs() {
               we involved the machine learning team too late, and we had to make
               a lot of edits to how we generate the experiments.
             </p>
+            <p>
+              DoE also proved to be challenging in terms of finding the right
+              balance between innovation and conservativeness. Since it was
+              meant for a flagship product and used as a finisher to clinch a
+              customer, it was difficult to design it with more intuitive user
+              flows. We had to really listen to the customers for this one,
+              which proved to be difficult when defending design choices as
+              sales ultimately triumphed.
+            </p>
             <p className="text-sm italic">
               This case study was made at time of testing. Actual results of the
               product may vary after public launch. All data and research
@@ -278,6 +332,16 @@ export default function labs() {
             </p>
           </article>
         </article>
+      </div>
+
+      <div className="flex flex-row gap-2 items-center mx-auto my-24">
+        <a href="mailto:ndisisnd@gmail.com" target="_blank" rel="noreferrer">
+          <h1 className="text-3xl md:text-5xl tracking-wide hover:underline hover:font-bold ease-in hover:ease-in">
+            Get in touch
+          </h1>
+        </a>
+        <ArrowRight size={24} className="block md:hidden" />
+        <ArrowRight size={48} className="md:block hidden" />
       </div>
     </div>
   );
