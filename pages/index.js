@@ -20,7 +20,7 @@ export default function Home() {
       </h1>
       <div className="flex flex-col gap-16 text-xl font-bold md:text-4xl transition-all ease-in">
         {work.map((el) => (
-          <Link key={el.title} href={el.link}>
+          <Link key={el.title} href={el.link} passHref={true}>
             <section className="flex flex-col gap-16 hover:shadow-md hover:cursor-pointer transition-all hover:p-8 ease-in hover:ease-in">
               <Image
                 src={el.src}
