@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import "../styles/global.css"
 
 const links = [
   {
@@ -82,7 +83,7 @@ const IndexPage = () => (
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
-      <h1>
+      <h1 className="text-4xl">
         Welcome to <b>Gatsby!</b>
       </h1>
       <p className={styles.intro}>
