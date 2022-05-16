@@ -16,7 +16,9 @@ export default function Navbar() {
         </div>
       </nav>
       <div className="flex flex-col bg-white">
-        <NavbarItem item="About" />
+        <NavbarItem item="About" containsItemSub={true} />
+        <NavbarItem item="Work" containsItemSub={true} />
+        <NavbarItem item="Resources" containsItemSub={false} />
       </div>
     </>
   )
