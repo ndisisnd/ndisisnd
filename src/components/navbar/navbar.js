@@ -9,10 +9,17 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="p-6 bg-bg-100 border-b border-bg-200">
+      <nav className="p-6 bg-bg-100 border-b border-bg-200 ">
         <div className="flex flex-row justify-between">
           <p className="font-semibold text-b-default">Andy Chan</p>
-          {!menuOpen ? <Menu /> : <X />}
+          {!menuOpen ? (
+            <Menu
+              onClick={() => setMenuOpen(true)}
+              className="cursor-pointer"
+            />
+          ) : (
+            <X onClick={() => setMenuOpen(false)} className="cursor-pointer" />
+          )}
         </div>
       </nav>
       <div className="flex flex-col bg-white">
