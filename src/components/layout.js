@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <div className="flex flex-col justify-between bg-bg-100">
       <Navbar />
-      <div className="p-6 h-screen">{children}</div>
+      <div className="p-6 h-full">{children}</div>
       <Footer className="self-stretch" />
     </div>
   )

@@ -7,6 +7,15 @@ import NavbarItem from "./navbarItem"
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const arrayItemSubWork = [
+    {
+      item: "Work",
+    },
+    {
+      item: "Talk",
+    },
+  ]
+
   return (
     <>
       <nav className="p-6 bg-bg-100 border-b border-bg-200 ">
@@ -22,10 +31,18 @@ export default function Navbar() {
           )}
         </div>
       </nav>
-      <div className="flex flex-col bg-white">
-        <NavbarItem item="About" containsItemSub={true} />
-        <NavbarItem item="Work" containsItemSub={true} />
-        <NavbarItem item="Resources" containsItemSub={false} />
+      <div className={`${menuOpen ? `flex flex-col bg-white ` : `hidden`}`}>
+        <NavbarItem item="About" containsItemSub={false} arrayItemSub={false} />
+        <NavbarItem
+          item="Work"
+          containsItemSub={true}
+          arrayItemSub={arrayItemSubWork}
+        />
+        <NavbarItem
+          item="Resources"
+          containsItemSub={false}
+          arrayItemSub={false}
+        />
       </div>
     </>
   )
