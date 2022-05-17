@@ -62,7 +62,7 @@ export default function About() {
     <>
       <Layout>
         <StaticImage className="rounded-3xl" src="../images/Me.jpeg" />
-        <div className="mt-6 py-8 flex flex-col gap-4 ">
+        <div className="mt-6 py-8 flex flex-col gap-4">
           <h3 className="text-4xl font-bold">About me</h3>
           <div className="flex flex-col gap-4 text-b-body">
             <p>
@@ -95,7 +95,7 @@ export default function About() {
             )
           })}
         </div>
-        <div>
+        <div className="lg:">
           <Card
             header="From a junior to a junior"
             CTA="Read my writings"

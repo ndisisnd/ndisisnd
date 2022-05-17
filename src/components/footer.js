@@ -6,10 +6,10 @@ import Medium from "../images/bi_medium.svg"
 
 export default function Footer() {
   return (
-    <footer className="p-6 flex flex-col items-center gap-2">
-      <div className="flex flex-col items-center gap-0">
+    <footer className="p-6 flex flex-col items-center gap-2 lg:flex-row lg:justify-between lg:px-40">
+      <div className="flex flex-col items-center gap-0 lg:items-start">
         <p className="text-sm text-b-body">Andy Chan © 2021 - 2022 v1.0</p>
-        <p className="text-sm text-b-body">v1.0 Made in Singapore 🇸🇬</p>
+        <p className="text-sm text-b-body">Made in Singapore 🇸🇬</p>
       </div>
       <div className="flex flex-row items-center justify-center gap-2">
         <a href="https://twitter.com/andthisisandy" target="_blank">
