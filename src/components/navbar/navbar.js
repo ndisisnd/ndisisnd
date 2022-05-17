@@ -32,7 +32,12 @@ export default function Navbar() {
         </div>
       </nav>
       <div className={`${menuOpen ? `flex flex-col bg-white ` : `hidden`}`}>
-        <NavbarItem item="About" containsItemSub={false} arrayItemSub={false} />
+        <NavbarItem
+          item="About"
+          containsItemSub={false}
+          arrayItemSub={false}
+          route={"/about"}
+        />
         <NavbarItem
           item="Work"
           containsItemSub={true}
