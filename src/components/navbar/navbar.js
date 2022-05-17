@@ -22,7 +22,9 @@ export default function Navbar() {
       <nav className="p-6 bg-bg-100 border-b border-bg-200 ">
         <div className="flex flex-row justify-between">
           <Link to="/">
-            <p className="font-semibold text-b-default">Andy Chan</p>
+            <p className="font-semibold text-b-default hover:text-o-900 hover:ease-in ease-in">
+              Andy Chan
+            </p>
           </Link>
           {!menuOpen ? (
             <Menu
