@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import TimelineBox from "../components/timelineBox"
 import "../styles/reset.css"
 import "../styles/global.css"
+import Card from "../components/card"
 
 export default function About() {
   const timeline = [
@@ -93,6 +94,15 @@ export default function About() {
               />
             )
           })}
+        </div>
+        <div>
+          <Card
+            title="From a junior to a junior"
+            CTA="Read my writings"
+            subtitle="Join 100+ peeps who follow my weekly articles on Medium. You'll get to read up about
+                      really raw perspectives of design!"
+            route="https://ndisisnd.medium.com"
+          />
         </div>
       </Layout>
     </>
