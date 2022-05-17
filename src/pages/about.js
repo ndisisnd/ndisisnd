@@ -5,6 +5,7 @@ import TimelineBox from "../components/timelineBox"
 import "../styles/reset.css"
 import "../styles/global.css"
 import Card from "../components/card"
+import { Helmet } from "react-helmet"
 
 export default function About() {
   const timeline = [
@@ -63,6 +64,10 @@ export default function About() {
       <Layout>
         <StaticImage className="rounded-3xl" src="../images/Me.jpeg" />
         <div className="mt-6 py-8 flex flex-col gap-4">
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>About Me | Product Designer | UI/UX </title>
+          </Helmet>
           <h3 className="text-4xl font-bold">About me</h3>
           <div className="flex flex-col gap-4 text-b-body">
             <p>

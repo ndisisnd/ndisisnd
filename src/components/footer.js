@@ -1,7 +1,6 @@
 import React from "react"
 import { Linkedin } from "react-feather"
 import { Twitter } from "react-feather"
-import { Youtube } from "react-feather"
 import Medium from "../images/bi_medium.svg"
 
 export default function Footer() {

@@ -1,6 +1,5 @@
 import React from "react"
 import "../styles/button.css"
-import { Link } from "gatsby"
 
 function Card({ header, subtitle, CTA, route }) {
   return (

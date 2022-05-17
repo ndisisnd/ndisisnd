@@ -5,10 +5,15 @@ import IndexSection from "../components/indexSection"
 import "../styles/reset.css"
 import "../styles/global.css"
 import Card from "../components/card"
+import { Helmet } from "react-helmet"
 
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Andy Chan | Product Designer | UI/UX </title>
+      </Helmet>
       <Layout>
         <StaticImage
           className="-mx-6 -my-6 lg:-m-24 lg:-mx-40"

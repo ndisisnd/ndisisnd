@@ -1,5 +1,4 @@
 import React from "react"
-import { Circle } from "react-feather"
 
 function TimelineBox({ date, header, body }) {
   return (
