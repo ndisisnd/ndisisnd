@@ -1,0 +1,13 @@
+.btn-cta-card {
+  background-image: linear-gradient(to bottom right, #ffae6b, #ff7dba);
+}
+
+.card {
+  box-shadow: 2.3px 1.3px 8.3px rgba(0, 0, 0, 0.008),
+    5.3px 3.1px 19.3px rgba(0, 0, 0, 0.011),
+    9.5px 5.5px 34.7px rgba(0, 0, 0, 0.014),
+    15.7px 9.2px 57.6px rgba(0, 0, 0, 0.016),
+    25.9px 15.1px 95px rgba(0, 0, 0, 0.019),
+    45.3px 26.4px 166px rgba(0, 0, 0, 0.022),
+    98px 57px 359px rgba(0, 0, 0, 0.03);
+}
