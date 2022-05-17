@@ -95,7 +95,7 @@ export default function About() {
             )
           })}
         </div>
-        <div className="lg:">
+        <div className="lg:py-24">
           <Card
             header="From a junior to a junior"
             CTA="Read my writings"
