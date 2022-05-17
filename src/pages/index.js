@@ -10,11 +10,11 @@ import { Helmet } from "react-helmet"
 export default function Home() {
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Andy Chan | Product Designer | UI/UX </title>
-      </Helmet>
       <Layout>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Andy Chan | Product Designer | UI/UX </title>
+        </Helmet>
         <StaticImage
           className="-mx-6 -my-6 lg:-m-24 lg:-mx-40"
           src="../images/Hero.png"
