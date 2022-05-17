@@ -12,10 +12,16 @@ export default function Footer() {
         <p className="text-sm text-b-body">v1.0 Made in Singapore 🇸🇬</p>
       </div>
       <div className="flex flex-row items-center justify-center gap-2">
-        <Linkedin size={18} color="#3d3d3d" />
-        <Twitter size={18} color="#3d3d3d" />
-        <Youtube size={18} color="#3d3d3d" />
-        <Medium />
+        <a href="https://twitter.com/andthisisandy" target="_blank">
+          <Twitter size={18} color="#3d3d3d" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/ndisisnd/" target="_blank">
+          <Linkedin size={18} color="#3d3d3d" />
+        </a>
+        <a href="https://ndisisnd.medium.com" target="_blank">
+          <Medium />
+        </a>
       </div>
     </footer>
   )
