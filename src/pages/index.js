@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import IndexSection from "../components/indexSection"
 import "../styles/reset.css"
 import "../styles/global.css"
+import Card from "../components/card"
 
 export default function Home() {
   return (
@@ -26,7 +27,45 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <IndexSection header="Selected Works" body="Works since 2020." />
+        <div className="flex flex-col gap-12 pt-12">
+          <section>
+            <IndexSection header="Selected Works 🛠" body="Works since 2020." />
+            <Card
+              header="Coming Soon"
+              route={false}
+              subtitle="I'm still organising my case studies. Peep this page in a week!"
+            />
+          </section>
+          <section>
+            <IndexSection
+              header="Resources 🎁"
+              body="Free and CC resources for designers"
+            />
+            <Card
+              header="Coming Soon"
+              route={false}
+              subtitle="Working on a portfolio presentation template on Figma, stay tuned! "
+            />
+          </section>
+          <section>
+            <IndexSection
+              header="Projects 🚀"
+              body="Side projects I've been working on!"
+            />
+            <Card
+              header="Coming Soon"
+              route={false}
+              subtitle="Stay tuned for my first project in Q3 2022."
+            />
+          </section>
+          <Card
+            header="From a junior to a junior"
+            CTA="Read my writings"
+            subtitle="Join 100+ peeps who follow my weekly articles on Medium. You'll get to read up about
+                      really raw perspectives of design!"
+            route="https://ndisisnd.medium.com"
+          />
+        </div>
       </Layout>
     </div>
   )

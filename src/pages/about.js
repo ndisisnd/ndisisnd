@@ -97,7 +97,7 @@ export default function About() {
         </div>
         <div>
           <Card
-            title="From a junior to a junior"
+            header="From a junior to a junior"
             CTA="Read my writings"
             subtitle="Join 100+ peeps who follow my weekly articles on Medium. You'll get to read up about
                       really raw perspectives of design!"
