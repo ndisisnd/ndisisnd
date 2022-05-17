@@ -3,6 +3,7 @@ import { Menu } from "react-feather"
 import { X } from "react-feather"
 import { useState } from "react"
 import NavbarItem from "./navbarItem"
+import { Link } from "gatsby"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -20,7 +21,9 @@ export default function Navbar() {
     <>
       <nav className="p-6 bg-bg-100 border-b border-bg-200 ">
         <div className="flex flex-row justify-between">
-          <p className="font-semibold text-b-default">Andy Chan</p>
+          <Link to="/">
+            <p className="font-semibold text-b-default">Andy Chan</p>
+          </Link>
           {!menuOpen ? (
             <Menu
               onClick={() => setMenuOpen(true)}
